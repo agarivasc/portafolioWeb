@@ -1,0 +1,204 @@
+body, html {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to right top, #ffffff, #92a8a8);
+}
+
+.foto-sobremi{
+    border-radius: 50%;
+}
+
+.container, h1, h2, h4 {
+   text-align: center;
+    padding: 0 20px;
+}
+
+.container {
+    margin: auto; 
+}
+
+.container p {
+    text-align: justify;
+}
+
+.img1 {
+    max-width: 100%; 
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.sobre-mi {
+    font-size: 20px;
+    text-align: center;
+}
+
+.proyecto-item {
+    font-size: 25px;
+}
+
+.contacto form {
+    margin: auto;
+}
+
+.contacto form input, .contacto form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pie-pagina {
+    margin-top: 25px;
+}
+
+header, .pie-pagina {
+    background-image: linear-gradient(to right, #0072ff, #00c6ff, #6a11cb);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+button:hover, a:hover {
+    background-image: linear-gradient(to bottom,  #00b7ff, #ae00ff 100%);
+    color: #fff;
+}
+
+
+vh1, h2 {
+    background-image: linear-gradient(to left, #6a11cb 0%, #2575fc 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+div form button {
+      width: 100%; 
+      height: 50px; 
+      background-color: gray; 
+      color: white; 
+      font-size: 20px; 
+      height: 45px; 
+      width: 200px;
+      transition: background-color 0.5s linear;
+      transition: color 0.5s linear;
+      border: none;
+      border-radius: 20px;
+  }
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 10s infinite alternate linear;
+    width: 300%;
+}
+      
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 80%;
+    height: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    40% {margin-left: -100%;}
+    60% {margin-left: -100%;}
+
+    80% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+  
+  
+@media (min-width: 601px) {
+    .inicio {
+        min-height: 20vh;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    header {
+       
+        color: #fff;
+        padding-top: 30px;
+        border-bottom: #0779e4 3px solid;
+        text-align: center;
+    }
+    .container {
+        max-width: 85%;
+    }
+
+    header ul li {
+        display: inline-block;
+        margin: 10px 5px;
+    }
+
+    .sobre-mi img {
+        
+        margin-right: 20px;
+    }
+
+    .inicio {
+        width: 100%;
+    }
+
+    .contacto form {
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+
+    header ul {
+        padding: 0; 
+        list-style-type: none; 
+    }
+
+    header ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center; 
+    }
+
+    .inicio,
+    .inicio h1,
+    .inicio h4 {
+        margin: 0; 
+        padding: 20px 0;
+    }
+
+    .sobre-mi img {
+       
+        margin-right: 0;
+    }
+
+    .inicio {
+        width: 100%;
+    }
+
+    .contacto form {
+        width: 100%;
+    }
+}
+
+
+
